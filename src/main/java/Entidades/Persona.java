@@ -6,7 +6,6 @@ public class Persona {
     private String apellido;
     private String dni;
     private String telefono;
-    private String email;
 
     public String getNombre() {
         return nombre;
@@ -40,28 +39,20 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String dni, String telefono, String email) {
+    public Persona(String nombre, String apellido, String dni, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.telefono = telefono;
-        this.email = email;
     }
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", telefono=" + telefono + ", email=" + email + '}';
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", telefono=" + telefono + '}';
     }
 
+    
 }

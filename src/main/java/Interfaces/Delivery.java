@@ -8,5 +8,4 @@ public interface Delivery {
 
     void calcularCostoEnvio();
 
-    void actualizarEntrega();
 }

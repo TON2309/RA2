@@ -19,8 +19,8 @@ public class Cliente extends Persona {
         this.IDcliente = IDcliente;
     }
 
-    public Cliente(String IDcliente, String nombre, String apellido, String dni, String telefono, String email) {
-        super(nombre, apellido, dni, telefono, email);
+    public Cliente(String IDcliente, String nombre, String apellido, String dni, String telefono) {
+        super(nombre, apellido, dni, telefono);
         this.IDcliente = IDcliente;
     }
 

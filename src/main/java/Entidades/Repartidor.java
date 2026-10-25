@@ -19,8 +19,8 @@ public class Repartidor extends Persona {
         this.IDrepartidor = IDrepartidor;
     }
 
-    public Repartidor(String IDrepartidor, String nombre, String apellido, String dni, String telefono, String email) {
-        super(nombre, apellido, dni, telefono, email);
+    public Repartidor(String IDrepartidor, String nombre, String apellido, String dni, String telefono) {
+        super(nombre, apellido, dni, telefono);
         this.IDrepartidor = IDrepartidor;
     }
 

@@ -1,10 +1,8 @@
 package Interfaces;
 
-public interface Pedido {
+public interface Pedidos {
 
     void registrarPedido();
-
-    void agregar();
 
     void calcularTotal();
 

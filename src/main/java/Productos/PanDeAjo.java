@@ -2,8 +2,8 @@ package Productos;
 
 public class PanDeAjo {
 
+    private String guarnicion;
     private double precio;
-    private int guarnicion;
 
     public double getPrecio() {
         return precio;
@@ -13,25 +13,26 @@ public class PanDeAjo {
         this.precio = precio;
     }
 
-    public int getGuarnicion() {
+    public String getGuarnicion() {
         return guarnicion;
     }
 
-    public void setGuarnicion(int guarnicion) {
+    public void setGuarnicion(String guarnicion) {
         this.guarnicion = guarnicion;
     }
 
     public PanDeAjo() {
     }
 
-    public PanDeAjo(double precio, int guarnicion) {
-        this.precio = precio;
+    public PanDeAjo(String guarnicion, double precio) {
         this.guarnicion = guarnicion;
+        this.precio = precio;
     }
 
     @Override
     public String toString() {
-        return "PanDeAjo{" + "precio=" + precio + ", guarnicion=" + guarnicion + '}';
+        return "PanDeAjo{" + "guarnicion=" + guarnicion + ", precio=" + precio + '}';
     }
+
 
 }
