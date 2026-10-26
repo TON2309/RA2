@@ -31,7 +31,7 @@ public class PanDeAjo {
 
     @Override
     public String toString() {
-        return "PanDeAjo{" + "guarnicion=" + guarnicion + ", precio=" + precio + '}';
+        return guarnicion + precio ;
     }
 
 

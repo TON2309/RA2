@@ -9,7 +9,7 @@ public class GestionMesa extends Boleta implements Mesa {
 
     private int mesa;
     private int[] mesas = new int[10];
-    private static Scanner sc;
+    private static Scanner sc = new Scanner (System.in);
 
     public int getMesa() {
         return mesa;
@@ -32,19 +32,16 @@ public class GestionMesa extends Boleta implements Mesa {
     }
 
     @Override
-    public String toString() {
-        return "GestionMesa{" + "mesa=" + mesa + '}';
-    }
-
-    @Override
     public void asignarMesa() {
-        int i = 0;
-        if (mesas[i] == 0) {
-            mesas[i] = 1;
-            mesa = i + 1;
-            System.out.println("Su mesa es la numero " + mesa);
+        for (int i = 0; i < mesas.length; i++) {
+            if (mesas[i] == 0) {
+                mesas[i] = 1;
+                mesa = i + 1;
+                System.out.println("Su mesa es la numero " + mesa);
+            } else {
+                System.out.println("Todas las mesas estan ocupadas, necesita liberar una mesa");
+            }
         }
-        System.out.println("Todas las mesas estan ocupadas, necesita liberar una mesa");
     }
 
     @Override

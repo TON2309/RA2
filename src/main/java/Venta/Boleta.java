@@ -3,12 +3,12 @@ package Venta;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
-import Interfaces.Pedidos;
 import Productos.Bebidas;
 import Productos.PanDeAjo;
 import Productos.Pizza;
+import Interfaces.Venta;
 
-public class Boleta extends Pedido implements Pedidos {
+public class Boleta extends Pedido implements Venta {
 
     private String IDBoleta;
     private static int contador = 0;
@@ -62,9 +62,8 @@ public class Boleta extends Pedido implements Pedidos {
         setTelefono(sc.nextLine());
         System.out.println("Ingrese su ID: ");
         setIDcliente(sc.nextLine());
-
-        for (int i = 0; i < listaPizzas.size(); i++) {
-            System.out.println((i + 1) + ". " + listaPizzas.get(i));
+        for (int i = 0; i < listaPizzas.size(); i++) { 
+            System.out.println((i + 1) + ". " + listaPizzas.get(i)); 
         }
         System.out.println("Escoja la pizza que desee: ");
         int p = sc.nextInt();
@@ -94,7 +93,7 @@ public class Boleta extends Pedido implements Pedidos {
         sc.nextLine();
         if (pda >= 1 && pda <= listaPanDeAjo.size()) {
             pedido.add("Pan de ajo: " + listaPanDeAjo.get(pda - 1));
-            setTotal(getTotal() + listaPanDeAjo.get(pda - 1).getPrecio());
+            setTotal(getTotal() + listaPanDeAjo.get(pda - 1).getPrecio()); 
         }
 
         detalle = "";

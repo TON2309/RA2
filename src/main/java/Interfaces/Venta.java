@@ -1,6 +1,6 @@
 package Interfaces;
 
-public interface Pedidos {
+public interface Venta {
 
     void registrarPedido();
 

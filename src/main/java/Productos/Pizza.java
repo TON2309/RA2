@@ -1,6 +1,7 @@
 package Productos;
 
 public class Pizza {
+
     private String tipo;
     private String tamaño;
     private double precio;
@@ -12,7 +13,6 @@ public class Pizza {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
 
     public String getTamaño() {
         return tamaño;
@@ -39,8 +39,9 @@ public class Pizza {
         this.precio = precio;
     }
 
-    
-
-    
+    @Override
+    public String toString() {
+        return tipo + "," + tamaño + "," + precio;
+    }
 
 }

@@ -23,10 +23,4 @@ public class Repartidor extends Persona {
         super(nombre, apellido, dni, telefono);
         this.IDrepartidor = IDrepartidor;
     }
-
-    @Override
-    public String toString() {
-        return "Repartidor{" + "IDrepartidor=" + IDrepartidor + '}';
-    }
-
 }

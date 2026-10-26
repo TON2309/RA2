@@ -56,10 +56,4 @@ public class Pedido extends Cliente {
         this.total = total;
     }
 
-
-    @Override
-    public String toString() {
-        return "Pedido{" + "IDPedido=" + IDPedido + ", fecha=" + fecha + ", total=" + total + "}";
-    }
-
 }

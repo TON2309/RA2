@@ -2,7 +2,7 @@ package Productos;
 
 public class Bebidas {
 
-     private String tipo;
+    private String tipo;
     private double precio;
 
     public void setPrecio(double precio) {
@@ -31,8 +31,7 @@ public class Bebidas {
 
     @Override
     public String toString() {
-        return "Bebidas{" + "tipo=" + tipo + ", precio=" + precio + '}';
+        return tipo + ", " + precio;
     }
-
 
 }

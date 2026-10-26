@@ -24,9 +24,4 @@ public class Cliente extends Persona {
         this.IDcliente = IDcliente;
     }
 
-    @Override
-    public String toString() {
-        return "Cliente{" + "IDcliente=" + IDcliente + '}';
-    }
-
 }
