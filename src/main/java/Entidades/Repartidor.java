@@ -23,4 +23,5 @@ public class Repartidor extends Persona {
         super(nombre, apellido, dni, telefono);
         this.IDrepartidor = IDrepartidor;
     }
+
 }

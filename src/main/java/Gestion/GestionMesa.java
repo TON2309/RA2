@@ -9,11 +9,7 @@ public class GestionMesa extends Boleta implements Mesa {
 
     private int mesa;
     private int[] mesas = new int[10];
-    private static Scanner sc = new Scanner (System.in);
-
-    public int getMesa() {
-        return mesa;
-    }
+    private static Scanner sc = new Scanner(System.in);
 
     public void setMesa(int mesa) {
         this.mesa = mesa;
@@ -38,10 +34,11 @@ public class GestionMesa extends Boleta implements Mesa {
                 mesas[i] = 1;
                 mesa = i + 1;
                 System.out.println("Su mesa es la numero " + mesa);
-            } else {
-                System.out.println("Todas las mesas estan ocupadas, necesita liberar una mesa");
+                return;
             }
         }
+        System.out.println("Todas las mesas estan ocupadas, necesita liberar una mesa");
+
     }
 
     @Override

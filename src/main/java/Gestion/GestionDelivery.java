@@ -12,16 +12,8 @@ public class GestionDelivery extends Boleta implements Delivery {
     private double envio;
     private Repartidor repartidor;
 
-    public String getDireccion() {
-        return direccion;
-    }
-
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public double getEnvio() {
-        return envio;
     }
 
     public void setEnvio(double envio) {
@@ -52,7 +44,7 @@ public class GestionDelivery extends Boleta implements Delivery {
         direccion = null;
         repartidor = null;
         envio = 0;
-        super.registrarPedido();      
+        super.registrarPedido();
         registrarDireccion();
         calcularCostoEnvio();
         System.out.println("Costo de envio: S/ " + envio);
@@ -86,9 +78,8 @@ public class GestionDelivery extends Boleta implements Delivery {
 
     @Override
     public void calcularCostoEnvio() {
-        envio = cantidadPizzas * 2.00;   
+        envio = cantidadPizzas * 2.00;
     }
-
 
     @Override
     public void calcularTotal() {
